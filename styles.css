@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1d23;
+}
+
+.timer-input-section {
+    text-align: center;
+    margin: 20px;
+}
+input{
+    width :5em ;
+    height: 1.5rem;
+}
+.active-timers-section {
+    text-align: center;
+    margin: 20px;
+}
+h1{
+    color: #fff;
+}
+h4{
+    color: #fff;
+    background-color: #34344a;
+    border-radius: 50px;
+    width: 30vh;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: no-drop;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #34344a;
+    gap: 20px !important;
+    color: #fff;
+}
+.current-time{
+    display: flex;
+    justify-content: center;
+    
+}
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+    font-size: medium;
+    background-color: #34344a;
+}
+#startTimer{
+    height: 40px;
+    width: 90px;
+}
+.timer-end {
+    background-color: #ffef45;
+    color: black;
+}
+
+button {
+    background-color: #ffef45;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #34344a;
+    color: #fff;
+    border: 1px solid #ffef45   ;
+}
+
+
+/* Media Query for screens with a maximum width of 768px */
+@media (max-width: 425px) {
+    /* Adjust font size and padding for smaller screens */
+    .timer-input-section, .timer {
+        font-size: small;
+        padding: 10px;
+    }
+    .container{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    input{
+        width :13em ;
+        height: 1.5rem;
+    }
+    #startTimer{
+        width: 11.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 513px) {
+    /* Add your styles for this screen size range here */
+    .container{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    input{
+        width :13em ;
+        height: 1.5rem;
+    }
+    #startTimer{
+        width: 11.5rem;
+        height: 1.5rem;
+    }
+}
